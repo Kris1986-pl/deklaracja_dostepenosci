@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KWP/KPP/KMP - BIP i Strony internetowe</title>
+</head>
+<body>
+    <h1>KWP/KPP/KMP - BIP i Strony internetowe</h1>
+    <ul>
+        {% for element in elements %}
+            <li>
+                <a href="{% url 'page-details' element.url %}">{{ element.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
